@@ -36,12 +36,14 @@
 
 <h3>Nos enfocaremos solamente en estructuras dinámicas</h3>
 
+<h4>Temas a tratar:</h4>
 <ul>
     <li><a href="./LISTAS.md">LISTAS</a></li>
-    <li>PILAS</li>
-    <li>COLAS</li>
+    <li><a href="./PILAS.md">PILAS</a></li>
+    <li><a href="./COLAS.md">COLAS</a></li>
+    <li><a href="./Matrizdispersa.md">MATRIZ DISPERSA</a></li>
+    <li><a href="./Matrizortogonal.md">MATRIZ ORTOGONAL</a></li>
+    <li><a href="./graphviz.md">GRAPHVIZ</a></li>
 </ul>
 
-<p align="justify"></p>
-<p align="justify"></p>
-<p align="justify"></p>
+<p align="center">Todos los ejemplos se trabajarán con el lenguaje Python</p>
