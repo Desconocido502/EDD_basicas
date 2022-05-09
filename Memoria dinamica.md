@@ -36,6 +36,12 @@
 
 <h3>Nos enfocaremos solamente en estructuras dinámicas</h3>
 
+<ul>
+    <li><a href="./LISTAS.md">LISTAS</a></li>
+    <li>PILAS</li>
+    <li>COLAS</li>
+</ul>
+
 <p align="justify"></p>
 <p align="justify"></p>
 <p align="justify"></p>
