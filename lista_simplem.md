@@ -105,7 +105,7 @@ aux.siguienteNodo = self.primero
 self.primero = aux
 ```
 
-<p align="center"> <img src="./img/insertaralinicio.gif" alt="edd"/> </p>
+<p align="center"> <img src="./img/agregaralinicio.gif" alt="agregar al inicio"/> </p>
 
 
 <h5>Agregar al final</h5>
