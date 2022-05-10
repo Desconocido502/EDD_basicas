@@ -105,6 +105,7 @@ aux.siguienteNodo = self.primero
 self.primero = aux
 ```
 
+<h4>Demostración gráfica:</h4>
 <p align="center"> <img src="./img/agregaralinicio.gif" alt="agregar al inicio"/> </p>
 
 
@@ -113,12 +114,12 @@ self.primero = aux
 
 ```python
 def agregarAlFinal(self): 
-    if self.isEmpty():
-        self.primero = self.ultimo = nodoLista(dato)
+    if self.estaVacio():
+        self.primero = self.ultimo = Nodo(dato)
     else:
         aux = self.ultimo
-        self.ultimo = nodoLista(dato)
-        aux.siguienteNodo = self.ultimo
+        self.ultimo = Nodo(dato)
+        aux.siguiente = self.ultimo
 ```
 <ul>
     <li>Si la lista esta vacia, tanto la cola como la cabeza apuntaran al nuevo nodo asignado.</li>
@@ -144,16 +145,88 @@ aux.siguiente = self.ultimo
 ```
 
 <h4>Demostración gráfica:</h4>
+<p align="center"> <img src="./img/agregaralfinal.gif" alt="agregar al inicio"/> </p>
 
 
+<h5>Eliminar al inicio</h5>
+<p align="justify">Elimina el primer nodo de la lista.</p>
 
+```python
+def eliminarAlInicio(self):
+    if self.estaVacio():
+        print("Lista vacia")
+    elif self.primero == self.ultimo:
+        self.primero = self.ultimo = None
+    else:
+        self.primero = self.primero.siguiente
+```
+
+<p align="justify">Si la lista se encuentra vacía, se muestra un mensaje diciendo <strong>Lista Vacia</strong>.</p>
+
+<p align="justify">Si la lista NO se encuentra vacía, pregunta si la referencia del nodo cabeza es la misma que la del nodo cola, en caso de que se cumpla, quiere decir que solo existe un nodo, y limpia la lista, quedando vacia.</p>
+
+<p align="justify">En caso de que no se cumplan las anteriores, es por que tiene mas de un elemento en la lista, y se elimina la referencia al primer nodo, simplemente haciendo que la nueva referencia del nodo cabeza sea el siguiente nodo que seguia despues del nodo cabeza.</p>
+
+<h4>Demostración gráfica:</h4>
+<p align="center"> <img src="./img/eliminaralinicio.gif" alt="eliminar al inicio"/> </p>
+
+<h5>Eliminar al final</h5>
+<p align="justify">Elimina el último nodo de la lista.</p>
+
+```python
+def eliminarAlFinal(self):
+    if self.estaVacio():
+        print("Lista vacia")
+    elif self.primero == self.ultimo:
+        self.primero = self.ultimo = None
+    else:
+        aux = self.primero
+        while aux.siguiente != self.ultimo:
+            aux = aux.siguiente
+        aux.siguienteNodo = None
+```
+
+<p align="justify">Si la lista se encuentra vacía, se muestra un mensaje diciendo <strong>Lista Vacia</strong>.</p>
+
+<p align="justify">Si la lista NO se encuentra vacía, pregunta si la referencia del nodo cabeza es la misma que la del nodo cola, en caso de que se cumpla, quiere decir que solo existe un nodo, y limpia la lista, quedando vacia.</p>
+
+<p align="justify">En caso de que no se cumplan las anteriores validaciones, se usa aux, para que recorra toda la lista, hasta antes de tener la referencia del último nodo, y se realizan las reasignaciones de referencia de los nodos.</p>
+
+<h4>Demostración gráfica:</h4>
+<p align="center"> <img src="./img/eliminaralfinal.gif" alt="eliminar al final"/> </p>
+
+
+<h5>Recorrido</h5>
+<p align="justify">Método para recorrer la lista simple, primero es necesario determinar si la lista contiene elementos. Si no esta vacía se recorre toda la lista desde el nodo cabeza hasta el nodo cola. Mostrando el contenido de cada uno de los nodos de la lista.</p>
+
+```python
+def recorrerLista(self): 
+    if self.estaVacio(): 
+        print("La lista esta vacía\n") 
+    aux = self.primero 
+    while aux != None: 
+        print(aux.dato) 
+        aux = aux.siguiente
+    print("\n")
+```
+
+<h4>Demostración gráfica:</h4>
+<p align="center"> <img src="./img/recorridoSimple.png" alt="eliminar al final"/> </p>
+
+<h5>Tamaño</h5>
+<p align="justify">Realiza un conteo de los nodos dentro de la lista, y retorna un valor entero de la cantidad de nodos en la lista.</p>
 
 
 ```python
-
+def tamanio(self):
+    count = 0 
+    if self.estaVacio(): 
+        return '0'
+    aux = self.primero 
+    while aux != None: 
+        count += 1
+        aux = aux.siguiente
+    return count
 ```
 
-<p align="justify"></p>
-<p align="justify"></p>
-<p align="justify"></p>
-<p align="justify"></p>
+<p align="justify">Tomando como ejemplo la lista anterior mostrada, el método retornará el valor de <strong>9</strong>, ya que nueve son los nodos que se encontraron en la lista.</p>
