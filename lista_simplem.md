@@ -230,3 +230,5 @@ def tamanio(self):
 ```
 
 <p align="justify">Tomando como ejemplo la lista anterior mostrada, el método retornará el valor de <strong>9</strong>, ya que nueve son los nodos que se encontraron en la lista.</p>
+
+<p align="center"><a href="./LISTAS.md">Listas</a></p>

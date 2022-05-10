@@ -55,7 +55,7 @@
 
 <h3>Redireccionamiento a cada tipo de listas enlazadas a trabajar:</h3>
 <ul>
-    <li><a href="./lista_simple.md">Lista simplemente enlazada</a></li>
+    <li><a href="./lista_simplem.md">Lista simplemente enlazada</a></li>
     <li><a href="./lista_doble.md">Lista doblemente enlazada</a></li>
     <li><a href="./lista_c_simple.md">Lista circular simplemente enlazada</a></li>
     <li><a href="./lista_c_doble.md">Lista circular doblemente enlazada</a></li>
