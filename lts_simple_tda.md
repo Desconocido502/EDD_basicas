@@ -209,7 +209,7 @@ lista.eliminarAlInicio()
 
 <p align="justify">Imprimamos nuevamente la lista, para ver si se encuentra Eduardo.</p>
 
-<h4>Lista con el primer elemento(persona) eliminada::</h4>
+<h4>Lista con el primer elemento(persona) eliminada:</h4>
 <p align="center"> <img src="./img/tdaeliminaralinicio.png" alt="tda ordenada"/> </p>
 
 <p align="justify">En efecto, se podrán dar cuenta que Eduardo ya no se encuentra en la lista!!!.</p>

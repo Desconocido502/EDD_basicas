@@ -3,10 +3,10 @@
 <p align="justify">Cada nodo (elemento) contiene un único enlace que conecta ese nodo al nodo siguiente o nodo sucesor. La Lista es eficiente en recorridos directos (“adelante”).</p>
 
 <p align="center"> 
-<img src="./img/lista_simple.png" alt="edd"/> 
-<figcaption align="center">Fig.4 - Lista simple enlazada</figcaption>
+<img src="./img/lista_simple.png" alt="lista simple"/> 
 </p>
-<p align="justify">La característica principal de una lista sencilla lineal es que la liga del último nodo apunta hacia el valor nulo.</p>
+
+<p align="justify">La característica principal de una lista sencilla lineal es que el apuntador del último nodo apunta hacia el valor nulo.</p>
 
 <h4>Se presenta una lista de los métodos que usará la clase de Lista simple:</h4>
 
@@ -100,7 +100,7 @@ aux = Nodo(dato)
 aux.siguiente = self.primero
 ```
 
-<p align="justify">Ahora se asigna a la cabeza el nodo aux, que es la nueva cabeza</p>
+<p align="justify">Ahora se asigna a la cabeza el nodo aux, que es la nueva cabeza.</p>
 
 ```python
 self.primero = aux
