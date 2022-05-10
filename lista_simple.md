@@ -145,6 +145,7 @@ self.ultimo = Nodo(dato)
 aux.siguiente = self.ultimo
 ```
 
+<h4>Demostración gráfica:</h4>
 
 
 
