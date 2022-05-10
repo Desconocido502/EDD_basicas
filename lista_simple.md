@@ -4,7 +4,7 @@
 
 <p align="center"> 
 <img src="./img/lista_simple.png" alt="edd"/> 
-<figcaption>Fig.4 - Lista simple enlazada</figcaption>
+<figcaption align="center">Fig.4 - Lista simple enlazada</figcaption>
 </p>
 <p align="justify">La característica principal de una lista sencilla lineal es que la liga del último nodo apunta hacia el valor nulo.</p>
 
@@ -74,10 +74,10 @@ def estaVacio(self):
 
 ```python
 def agregarAlInicio(self): 
-    if self.isEmpty(): 
+    if self.estaVacio(): 
         self.primero = self.ultimo = Nodo(dato)
     else:
-        aux = nodoLista(dato)
+        aux = Nodo(dato)
         aux.siguienteNodo = self.primero
         self.primero = aux
 ```
@@ -87,18 +87,70 @@ def agregarAlInicio(self):
     <li>Sino, se agrega el nodo al inicio de la lista, osea al nodo cabeza.</li>
 </ul>
 
-<p align="justify">'aux = nodoLista(dato)', Se asigna el nuevo nodo a aux</p>
-<p align="justify">'aux.siguienteNodo = self.primero',Al nodo nuevo, se le agrega la referencia del nodo que era la cabeza</p>
-<p align="justify">'self.primero = aux', Ahora se asigna a la cabeza el nodo aux, que es la nueva cabeza</p>
+<p align="justify">Se asigna el nuevo nodo a aux</p>
+
+```python
+aux = Nodo(dato)
+```
+
+<p align="justify">Al nodo nuevo, se le agrega la referencia del nodo que era la cabeza</p>
+
+```python
+aux.siguienteNodo = self.primero
+```
+
+<p align="justify">Ahora se asigna a la cabeza el nodo aux, que es la nueva cabeza</p>
+
+```python
+self.primero = aux
+```
+
+<p align="center"> <img src="./img/insertaralinicio.gif" alt="edd" width="360" height="180" /> </p>
+
 
 <h5>Agregar al final</h5>
 <p align="justify">Inserta los nodos por la cola.</p>
 
 ```python
 def agregarAlFinal(self): 
-    return self.primero == None
+    if self.isEmpty():
+        self.primero = self.ultimo = nodoLista(dato)
+    else:
+        aux = self.ultimo
+        self.ultimo = nodoLista(dato)
+        aux.siguienteNodo = self.ultimo
+```
+<ul>
+    <li>Si la lista esta vacia, tanto la cola como la cabeza apuntaran al nuevo nodo asignado.</li>
+    <li>Sino, se agrega el nodo al final de la lista, osea al nodo cola (último nodo).</li>
+</ul>
+
+<p align="justify">Se asigna a aux, la referencia del último nodo que a su vez es el primero.</p>
+
+```python
+aux = self.ultimo
 ```
 
+<p align="justify">Se asigna el nuevo nodo a la referencia del último nodo</p>
+
+```python
+self.ultimo = Nodo(dato)
+```
+
+<p align="justify">El nodo siguiente almacena la referencia del último nodo en el primer nodo.</p>
+
+```python
+aux.siguiente = self.ultimo
+```
+
+
+
+
+
+
+```python
+
+```
 
 <p align="justify"></p>
 <p align="justify"></p>

@@ -31,7 +31,7 @@
 
 <p align="center"> 
 <img src="./img/lineales.png" alt="edd"/> 
-<figcaption>Fig.1 - Estructura lineal</figcaption>
+<figcaption align="center">Fig.1 - Estructura lineal</figcaption>
 </p>
 
 <h3>Nos enfocaremos solamente en estructuras dinámicas</h3>

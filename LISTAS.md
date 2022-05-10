@@ -4,7 +4,7 @@
 
 <p align="center"> 
 <img src="./img/lineales.png" alt="edd"/> 
-<figcaption>Fig.2 - Ejemplo de lista enlazada</figcaption>
+<figcaption align="center">Fig.2 - Ejemplo de lista enlazada</figcaption>
 </p>
 
 <h3>¿Qué es un nodo?</h3>
@@ -12,7 +12,7 @@
 
 <p align="center"> 
 <img src="./img/nodo.png" alt="edd" width="260"/> 
-<figcaption>Fig.3 - Ejemplo de un nodo</figcaption>
+<figcaption align="center">Fig.3 - Ejemplo de un nodo</figcaption>
 </p>
 
 <h3>Tipos de listas enlazadas:</h3>
