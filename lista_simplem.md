@@ -27,6 +27,7 @@
         </ul>
     </li>
     <li>Esta vacio</li>
+    <li>Buscar Dato</li>
 </ul>
 
 <h5>Para complementar la lista, necesitamos crear una clase nodo, la cual es la siguiente:</h5>
@@ -78,7 +79,7 @@ def agregarAlInicio(self):
         self.primero = self.ultimo = Nodo(dato)
     else:
         aux = Nodo(dato)
-        aux.siguienteNodo = self.primero
+        aux.siguiente = self.primero
         self.primero = aux
 ```
 
@@ -96,7 +97,7 @@ aux = Nodo(dato)
 <p align="justify">Al nodo nuevo, se le agrega la referencia del nodo que era la cabeza</p>
 
 ```python
-aux.siguienteNodo = self.primero
+aux.siguiente = self.primero
 ```
 
 <p align="justify">Ahora se asigna a la cabeza el nodo aux, que es la nueva cabeza</p>
@@ -183,7 +184,7 @@ def eliminarAlFinal(self):
         aux = self.primero
         while aux.siguiente != self.ultimo:
             aux = aux.siguiente
-        aux.siguienteNodo = None
+        aux.siguiente = None
 ```
 
 <p align="justify">Si la lista se encuentra vacía, se muestra un mensaje diciendo <strong>Lista Vacia</strong>.</p>
@@ -212,6 +213,24 @@ def recorrerLista(self):
 
 <h4>Demostración gráfica:</h4>
 <p align="center"> <img src="./img/recorridoSimple.png" alt="eliminar al final"/> </p>
+
+<h5>Buscar un dato en la lista:</h5>
+<p align="justify">Método de la clase, para buscar un dato, en caso de que lo encuentre, retorna el valor mas un mensaje de encontrado, en caso de que no lo encuentre retornará el valor enviado anteriormente mas un mensaje.Para el ejemplo siguiente, se busco el número <strong>42.</strong></p>
+
+<h4>Demostración gráfica:</h4>
+<p align="center"> <img src="./img/buscarDato.gif" alt="eliminar al final"/> </p>
+
+```python
+def buscarDato(self, dato):
+    if self.primero is None:
+        return "La lista no tiene elementos"
+    aux = self.primero
+    while aux is not None:
+        if aux.dato == dato:
+            return f"{dato}, Dato encontrado"
+        aux = aux.siguiente
+    return f"{dato}, Dato no encontrado"
+```
 
 <h5>Tamaño</h5>
 <p align="justify">Realiza un conteo de los nodos dentro de la lista, y retorna un valor entero de la cantidad de nodos en la lista.</p>
@@ -280,7 +299,7 @@ class listaEnlazadaSimple():
             aux = self.primero
             while aux.siguiente != self.ultimo:
                 aux = aux.siguiente
-            aux.siguienteNodo = None
+            aux.siguiente = None
     
     def recorrerLista(self): 
         if self.estaVacio(): 
@@ -302,5 +321,44 @@ class listaEnlazadaSimple():
             aux = aux.siguiente
         return count
 ```
+
+<p align="justify">Como 'BONUS', se implementará el método burbuja, para ordenar los valores de la lista.</p>
+
+```python
+def ordenamiento(self):
+        actual = aux = None
+        if not (self.estaVacio()):
+            actual = self.primero
+            while (actual.siguiente):
+                aux = actual.siguiente
+                while (aux):
+                    if (aux.dato < actual.dato):
+                        tmp = actual.dato
+                        actual.dato = aux.dato
+                        aux.dato = tmp
+                    aux = aux.siguiente
+                actual = actual.siguiente
+        else:
+            print("No hay elementos")
+```
+
+<p align="justify">Primero, se mostrará la salida de las lista, en este caso será una lista de números desordenados, y al final se mostrará la lista ya ordenada, implementando el método sort.</p>
+
+<h4>Lista sin ordenar:</h4>
+<p align="center"> <img src="./img/recorridoSimple.png" alt="eliminar al final"/> </p>
+
+<h4>Lista ordenar:</h4>
+<p align="center"> <img src="./img/listasimpleordenada.png" alt="eliminar al final"/> </p>
+
+
+<p align="justify">Listo!!!, ahora implementen su lista.</p>
+
+
+<p align="justify">Referencias:</p>
+<ul>
+    <li><a href="https://www.studytonight.com/data-structures/linear-linked-list">Lista simple(Study tonight)</a></li>
+    <li><a href='https://dev.to/ronnymedina/estructura-de-datos-linked-list-lista-enlazada-2h9'>DEV</a></li>
+    <li>funcionamiento gráfico de la listas simple: <a href='https://visualgo.net/en/list'>Visualgo</a></li>
+</ul>
 
 <p align="center"><a href="./LISTAS.md">Listas</a></p>

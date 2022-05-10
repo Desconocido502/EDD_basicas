@@ -41,7 +41,7 @@ class listaEnlazadaSimple():
             aux = self.primero
             while aux.siguiente != self.ultimo:
                 aux = aux.siguiente
-            aux.siguienteNodo = None
+            aux.siguiente = None
     
     def recorrerLista(self): 
         if self.estaVacio(): 
@@ -63,6 +63,32 @@ class listaEnlazadaSimple():
             aux = aux.siguiente
         return count
 
+    def ordenamientoBurbuja(self):
+        actual = aux = None
+        if not (self.estaVacio()):
+            actual = self.primero
+            while (actual.siguiente):
+                aux = actual.siguiente
+                while (aux):
+                    if (aux.dato < actual.dato):
+                        tmp = actual.dato
+                        actual.dato = aux.dato
+                        aux.dato = tmp
+                    aux = aux.siguiente
+                actual = actual.siguiente
+        else:
+            print("No hay elementos")
+    
+    def buscarDato(self, date):
+        if self.primero is None:
+            print("La lista no tiene elementos")
+        aux = self.primero
+        while aux is not None:
+            if aux.dato == date:
+                return (f"{date}, Dato encontrado")
+            aux = aux.siguiente
+        return (f"{date}, Dato no encontrado")
+
 lts_simple = listaEnlazadaSimple()
 lts_simple.agregarAlInicio(10)
 lts_simple.agregarAlInicio(15)
@@ -75,3 +101,6 @@ lts_simple.agregarAlFinal(64)
 lts_simple.agregarAlInicio(78)
 lts_simple.recorrerLista()
 print(lts_simple.tamanio())
+lts_simple.ordenamientoBurbuja()
+lts_simple.recorrerLista()
+print(lts_simple.buscarDato(95))
