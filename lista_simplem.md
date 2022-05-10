@@ -105,8 +105,6 @@ aux.siguienteNodo = self.primero
 self.primero = aux
 ```
 
-<h4>Demostración gráfica:</h4>
-
 <p align="center"> <img src="./img/insertaralinicio.gif" alt="edd"/> </p>
 
 
