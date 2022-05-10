@@ -320,6 +320,32 @@ class listaEnlazadaSimple():
             count += 1
             aux = aux.siguiente
         return count
+
+    def ordenamientoBurbuja(self):
+        actual = aux = None
+        if not (self.estaVacio()):
+            actual = self.primero
+            while (actual.siguiente):
+                aux = actual.siguiente
+                while (aux):
+                    if (aux.dato < actual.dato):
+                        tmp = actual.dato
+                        actual.dato = aux.dato
+                        aux.dato = tmp
+                    aux = aux.siguiente
+                actual = actual.siguiente
+        else:
+            print("No hay elementos")
+    
+    def buscarDato(self, date):
+        if self.primero is None:
+            print("La lista no tiene elementos")
+        aux = self.primero
+        while aux is not None:
+            if aux.dato == date:
+                return (f"{date}, Dato encontrado")
+            aux = aux.siguiente
+        return (f"{date}, Dato no encontrado")
 ```
 
 <p align="justify">Como 'BONUS', se implementará el método burbuja, para ordenar los valores de la lista.</p>
@@ -342,7 +368,7 @@ def ordenamiento(self):
             print("No hay elementos")
 ```
 
-<p align="justify">Primero, se mostrará la salida de las lista, en este caso será una lista de números desordenados, y al final se mostrará la lista ya ordenada, implementando el método sort.</p>
+<p align="justify">Primero, se mostrará la salida de la lista, en este caso será una lista de números desordenados, y al final se mostrará la lista ya ordenada, implementando el método sort.</p>
 
 <h4>Lista sin ordenar:</h4>
 <p align="center"> <img src="./img/recorridoSimple.png" alt="eliminar al final"/> </p>
@@ -356,9 +382,11 @@ def ordenamiento(self):
 
 <p align="justify">Referencias:</p>
 <ul>
-    <li><a href="https://www.studytonight.com/data-structures/linear-linked-list">Lista simple(Study tonight)</a></li>
-    <li><a href='https://dev.to/ronnymedina/estructura-de-datos-linked-list-lista-enlazada-2h9'>DEV</a></li>
-    <li>funcionamiento gráfico de la listas simple: <a href='https://visualgo.net/en/list'>Visualgo</a></li>
+    <li><a href="https://www.studytonight.com/data-structures/linear-linked-list" target="_blank">Lista simple(Study tonight)</a></li>
+    <li><a href='https://dev.to/ronnymedina/estructura-de-datos-linked-list-lista-enlazada-2h9' target="_blank">DEV</a></li>
+    <li>funcionamiento gráfico de la listas simple: <a href='https://visualgo.net/en/list' target="_blank">Visualgo</a></li>
 </ul>
+
+<p align="justify"><a href="./lts_simple_tda.md">lista simple con TDA</a></p>
 
 <p align="center"><a href="./LISTAS.md">Listas</a></p>
