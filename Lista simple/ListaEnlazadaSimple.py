@@ -63,7 +63,7 @@ class listaEnlazadaSimple():
             aux = aux.siguiente
         return count
 
-    def ordenamientoBurbuja(self):
+    def ordenamiento(self):
         actual = aux = None
         if not (self.estaVacio()):
             actual = self.primero

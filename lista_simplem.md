@@ -217,8 +217,7 @@ def recorrerLista(self):
 <h5>Buscar un dato en la lista:</h5>
 <p align="justify">Método de la clase, para buscar un dato, en caso de que lo encuentre, retorna el valor mas un mensaje de encontrado, en caso de que no lo encuentre retornará el valor enviado anteriormente mas un mensaje.Para el ejemplo siguiente, se busco el número <strong>42.</strong></p>
 
-<h4>Demostración gráfica:</h4>
-<p align="center"> <img src="./img/buscarDato.gif" alt="eliminar al final"/> </p>
+
 
 ```python
 def buscarDato(self, dato):
@@ -231,6 +230,9 @@ def buscarDato(self, dato):
         aux = aux.siguiente
     return f"{dato}, Dato no encontrado"
 ```
+
+<h4>Demostración gráfica:</h4>
+<p align="center"> <img src="./img/buscarDato.gif" alt="eliminar al final"/> </p>
 
 <h5>Tamaño</h5>
 <p align="justify">Realiza un conteo de los nodos dentro de la lista, y retorna un valor entero de la cantidad de nodos en la lista.</p>
@@ -321,7 +323,7 @@ class listaEnlazadaSimple():
             aux = aux.siguiente
         return count
 
-    def ordenamientoBurbuja(self):
+    def ordenamiento(self):
         actual = aux = None
         if not (self.estaVacio()):
             actual = self.primero
