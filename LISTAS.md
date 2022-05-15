@@ -58,5 +58,5 @@
     <li><a href="./lista_simplem.md">Lista simplemente enlazada</a></li>
     <li><a href="./lista_doble.md">Lista doblemente enlazada</a></li>
     <li><a href="./lista_c_simple.md">Lista circular simplemente enlazada</a></li>
-    <li><a href="./lista_c_doble.md">Lista circular doblemente enlazada</a></li>
+    <li>Lista circular doblemente enlazada</li>
 </ul>

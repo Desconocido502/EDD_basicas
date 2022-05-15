@@ -122,6 +122,7 @@ def agregarAlFinal(self):
         self.ultimo = Nodo(dato)
         aux.siguiente = self.ultimo
 ```
+
 <ul>
     <li>Si la lista esta vacia, tanto la cola como la cabeza apuntaran al nuevo nodo asignado.</li>
     <li>Sino, se agrega el nodo al final de la lista, osea al nodo cola (último nodo).</li>
