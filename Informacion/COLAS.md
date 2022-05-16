@@ -1,9 +1,9 @@
 <h1>Introducción a Colas</h1>
 
-<p align="jsutify">Es una colección de elementos que se agregan y quitan basándose en el principio de <b>primero en entrar-primero en salir</b>(<strong>FIFO, First In-First Out</strong>).</p>
+<p align="justify">Es una colección de elementos que se agregan y quitan basándose en el principio de <b>primero en entrar-primero en salir</b>(<strong>FIFO, First In-First Out</strong>).</p>
 
 <p align="center">
-<img src="../img/queue.gif" alt="stack" width="250px"/>
+<img src="../img/queue.gif" alt="queue" width="250px"/>
 </p>
 
 <p align="justify">Esto quiere decir que el primer elemento en ser insertado es el primero en ser eliminado. Un elemento puede ser agregado en cualquier momento a una cola, esto se hace por el final, pero solo se puede acceder o eliminar el elemento que esté en el frente de la misma.</p>
