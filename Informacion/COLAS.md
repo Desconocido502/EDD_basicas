@@ -142,7 +142,7 @@ def listar(self):
 
 <h4>Demostración gráfica:</h4>
 <p align="center">
-<img src="../img/listarcola.png" alt="Datos en la pila"/>
+<img src="../img/listarCola.png" alt="Datos en la pila"/>
 </p>
 
 <p align="justify">Código completo a continuación:</p>
