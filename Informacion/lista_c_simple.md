@@ -3,7 +3,7 @@
 <p align="justify">En las listas lineales simples o en las dobles siempre hay un primer nodo (cabeza) y un último nodo (cola). Una lista circular, por propia naturaleza, no tiene ni principio ni fin. Sin embargo, resulta útil establecer un nodo a partir del cual se acceda a la lista y asi poder acceder a sus nodos.</p>
 
 <p align="center"> 
-<img src="./img/circularSimple.png" alt="lista circular simple" width="400px"/>
+<img src="../img/circularSimple.png" alt="lista circular simple" width="400px"/>
 <center><figcaption></figcaption>Lista circular simple,  <a href="https://medium.com/@umarquez_mx">Uriel Márquez</a></center>
 </p>
 
@@ -88,7 +88,7 @@ def agregarAlInicio(self):
 ```
 
 <h4>Demostración gráfica:</h4>
-<p align="center"> <img src="./img/agregaraliniciocircular.png" alt="agregar al inicio" width="400px"/> </p>
+<p align="center"> <img src="../img/agregaraliniciocircular.png" alt="agregar al inicio" width="400px"/> </p>
 
 <h5>Agregar al final</h5>
 <p align="justify">Inserta los nodos por la cola.</p>
@@ -105,7 +105,7 @@ def agregarAlFinal(self):
 ```
 
 <h4>Demostración gráfica:</h4>
-<p align="center"> <img src="./img/agregaralfinalcircular.png" alt="agregar al final" width="470px"/> </p>
+<p align="center"> <img src="../img/agregaralfinalcircular.png" alt="agregar al final" width="470px"/> </p>
 
 <h5>Eliminar al inicio</h5>
 <p align="justify">Elimina el primer nodo de la lista.</p>
@@ -122,7 +122,7 @@ def eliminarAlInicio(self):
 ```
 
 <h4>Demostración gráfica:</h4>
-<p align="center"> <img src="./img/eliminaraliniciocircular.png" alt="eliminar al inicio" width="430px"/> </p>
+<p align="center"> <img src="../img/eliminaraliniciocircular.png" alt="eliminar al inicio" width="430px"/> </p>
 
 <h5>Eliminar al final</h5>
 <p align="justify">Elimina el último nodo de la lista.</p>
@@ -142,7 +142,7 @@ def eliminarAlFinal(self):
 ```
 
 <h4>Demostración gráfica:</h4>
-<p align="center"> <img src="./img/eliminaralfinalcircular.png" alt="eliminar al inicio" width="430px"/> </p>
+<p align="center"> <img src="../img/eliminaralfinalcircular.png" alt="eliminar al inicio" width="430px"/> </p>
 
 <h5>Recorrido</h5>
 <p align="justify">Método para recorrer la lista simple circular, En una lista circular simple no existe el valor nulo, entonces para encontrar el final de la lista es necesario hacer referencia al primer nodo de la lista y tomar en cuenta esto para la condición del ciclo que recorrerá toda la lista.</p>
@@ -161,7 +161,7 @@ def recorrido(self):
 ```
 
 <h4>Demostración gráfica:</h4>
-<p align="center"> <img src="./img/recorridocircular.png" alt="eliminar al inicio" width="360px"/> </p>
+<p align="center"> <img src="../img/recorridocircular.png" alt="eliminar al inicio" width="360px"/> </p>
 
 <h5>Buscar un dato en la lista:</h5>
 <p align="justify">Método de la clase, para buscar un dato, es necesario contar con el valor del elemento x recorrer toda la lista desde el primer nodo y comparar el valor de cada nodo que se va recorriendo con el valor del elemento x, hasta que se encuentre el nodo con el valor de x o que se acabe la lista.</p>
@@ -180,7 +180,7 @@ def buscarDato(self, dato):
 ```
 
 <h4>Demostración gráfica:</h4>
-<p align="center"> <img src="./img/buscardatocircular.png" alt="eliminar al inicio" width="400px"/> </p>
+<p align="center"> <img src="../img/buscardatocircular.png" alt="eliminar al inicio" width="400px"/> </p>
 
 <h5>Tamaño</h5>
 <p align="justify">Realiza un conteo de los nodos dentro de la lista, y retorna un valor entero de la cantidad de nodos en la lista.</p>

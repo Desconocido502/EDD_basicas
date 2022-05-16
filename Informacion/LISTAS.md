@@ -3,7 +3,7 @@
 <p align="justify">Una <strong>lista enlazada (linked list)</strong> es una colección o secuencia  de elementos dispuestos unos detrás de otro, en la que cada elemento se conecta al siguiente elemento por un <strong>enlace</strong> o <strong>referencia.</strong></p>
 
 <p align="center"> 
-<img src="./img/lineales.png" alt="edd"/> 
+<img src="../img/lineales.png" alt="edd"/> 
 <figcaption align="center">Fig.2 - Ejemplo de lista enlazada</figcaption>
 </p>
 
@@ -11,7 +11,7 @@
 <p align="justify">Un nodo en una lista enlazada contiene el valor de los datos y el puntero que apunta a la ubicación del siguiente nodo en la lista enlazada. Osea está compuesto por dos partes: Un valor y un apuntador de la referencia del siguiente nodo.</p>
 
 <p align="center"> 
-<img src="./img/nodo.png" alt="edd" width="260"/> 
+<img src="../img/nodo.png" alt="edd" width="260"/> 
 <figcaption align="center">Fig.3 - Ejemplo de un nodo</figcaption>
 </p>
 
