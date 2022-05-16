@@ -234,7 +234,7 @@ def recorrerLista(self):
 <p align="justify">Método de la clase, para buscar un dato, en caso de que lo encuentre, retorna el valor mas un mensaje de encontrado, en caso de que no lo encuentre retornará el valor enviado anteriormente mas un mensaje.Para el ejemplo siguiente, se busco el número <strong>36.</strong></p>
 
 <h4>Demostración gráfica:</h4>
-<p align="center"> <img src="../img/buscarDatoDoble.gif" alt="eliminar al final"/> </p>
+<p align="center"> <img src="../img/buscardatodoble.gif" alt="eliminar al final"/> </p>
 
 <h5>Tamaño</h5>
 <p align="justify">Realiza un conteo de los nodos dentro de la lista, y retorna un valor entero de la cantidad de nodos en la lista.</p>
