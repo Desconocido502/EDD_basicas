@@ -174,12 +174,12 @@ lista.agregarAlInicio(Persona("Nelson", 28, "45665484007480"))
 <p align="justify">Podemos recorrer e ir mostrando la lista desordenada:</p>
 
 <h4>Lista sin ordenar:</h4>
-<p align="center"> <img src="./img/tdasinordenar.png" alt="tda sin ordenar"/> </p>
+<p align="center"> <img src="../img/tdasinordenar.png" alt="tda sin ordenar"/> </p>
 
 <p align="justify">Ahora, podemos recorrer e ir mostrando la lista ordenada:</p>
 
 <h4>Lista ordenada:</h4>
-<p align="center"> <img src="./img/tdaordenada.png" alt="tda ordenada"/> </p>
+<p align="center"> <img src="../img/tdaordenada.png" alt="tda ordenada"/> </p>
 
 <p align="justify">Busquemos el nombre de una persona, que tal mmhhmmm Maria!</p>
 
@@ -210,7 +210,7 @@ lista.eliminarAlInicio()
 <p align="justify">Imprimamos nuevamente la lista, para ver si se encuentra Eduardo.</p>
 
 <h4>Lista con el primer elemento(persona) eliminada:</h4>
-<p align="center"> <img src="./img/tdaeliminaralinicio.png" alt="tda ordenada"/> </p>
+<p align="center"> <img src="../img/tdaeliminaralinicio.png" alt="tda ordenada"/> </p>
 
 <p align="justify">En efecto, se podrán dar cuenta que Eduardo ya no se encuentra en la lista!!!.</p>
 

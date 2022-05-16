@@ -3,7 +3,7 @@
 <p align="justify">Cada nodo (elemento) contiene dos enlaces, uno a su nodo predecesor y el otro a su nodo sucesor. La lista es eficiente tanto en recorrido directo (“adelante”) como en recorrido inverso (“atrás”).</p>
 
 <p align="center"> 
-<img src="./img/listaenlazadadoble.png" alt="lista doble"/> 
+<img src="../img/listaenlazadadoble.png" alt="lista doble"/> 
 </p>
 
 <p align="justify">La característica principal de una lista doble lineal es que los apuntadores del último nodo y del primer nodo apuntan hacia el valor nulo.</p>
@@ -120,7 +120,7 @@ self.primero = aux
 <p align="justify">Como se podrán dar cuenta, en dicho método se le aumenta una variable llamada size osea tamaño en español, y es la encargada de llevar el conteo de nodos, de está manera se lleva un mejor control del conteo de nodos y de la eficiencia de la memoria.</p>
 
 <h4>Demostración gráfica:</h4>
-<p align="center"> <img src="./img/dobleagregaralinicio.gif" alt="agregar al inicio"/> </p>
+<p align="center"> <img src="../img/dobleagregaralinicio.gif" alt="agregar al inicio"/> </p>
 
 <h5>Agregar al final</h5>
 <p align="justify">Inserta los nodos por la cola.</p>
@@ -160,7 +160,7 @@ self.ultimo.anterior = aux
 ```
 
 <h4>Demostración gráfica:</h4>
-<p align="center"> <img src="./img/dobleagregaralfinal.gif" alt="agregar al inicio"/> </p>
+<p align="center"> <img src="../img/dobleagregaralfinal.gif" alt="agregar al inicio"/> </p>
 
 <h5>Eliminar al inicio</h5>
 <p align="justify">Elimina el primer nodo de la lista.</p>
@@ -185,7 +185,7 @@ def eliminarAlInicio(self):
 <p align="justify">Si la lista no está vacía, y tiene más de un nodo en la lista, lo que hacemos es al nodo cabeza asignarle la referencia del nodo siguiente al nodo cabeza, luego de esto hacemos que el nodo cabeza en su apuntador anterior sea igual a nulo o que no haga referencia hacia otro nodo,y finalmente el contador disminuye en uno, ya que eliminamos un nodo por la cabeza.</p>
 
 <h4>Demostración gráfica:</h4>
-<p align="center"> <img src="./img/eliminardoblealinicio.gif" alt="agregar al inicio"/> </p>
+<p align="center"> <img src="../img/eliminardoblealinicio.gif" alt="agregar al inicio"/> </p>
 
 <h5>Eliminar al inicio</h5>
 <p align="justify">Elimina el primer nodo de la lista.</p>
@@ -210,7 +210,7 @@ def eliminarAlFinal(self):
 <p align="justify">Si la lista no está vacía, y tiene más de un nodo en la lista, lo que hacemos es que al nodo cola, se le asigna el apuntador anterior del nodo cola, osea almacenando la referencia del penúltimo nodo que se convertirá en el último nodo, lo siguiente que se hace es que al apuntador siguiente del nodo cola tome referencia a nulo, desprendiendose del que era el último nodo, y por último el contador de nodos se le resta uno, por que se borró un nodo.</p>
 
 <h4>Demostración gráfica:</h4>
-<p align="center"> <img src="./img/eliminardoblealfinal.gif" alt="agregar al inicio"/> </p>
+<p align="center"> <img src="../img/eliminardoblealfinal.gif" alt="agregar al inicio"/> </p>
 
 <h5>Recorrido</h5>
 <p align="justify">Método para recorrer la lista doble, primero es necesario determinar si la lista contiene elementos. Si no esta vacía se recorre toda la lista desde el nodo cabeza hasta el nodo cola. Mostrando el contenido de cada uno de los nodos de la lista.</p>
@@ -228,13 +228,13 @@ def recorrerLista(self):
 ```
 
 <h4>Demostración gráfica:</h4>
-<p align="center"> <img src="./img/recorridoSimple.png" alt="eliminar al final"/> </p>
+<p align="center"> <img src="../img/recorridoSimple.png" alt="eliminar al final"/> </p>
 
 <h5>Buscar un dato en la lista:</h5>
 <p align="justify">Método de la clase, para buscar un dato, en caso de que lo encuentre, retorna el valor mas un mensaje de encontrado, en caso de que no lo encuentre retornará el valor enviado anteriormente mas un mensaje.Para el ejemplo siguiente, se busco el número <strong>36.</strong></p>
 
 <h4>Demostración gráfica:</h4>
-<p align="center"> <img src="./img/buscarDatoDoble.gif" alt="eliminar al final"/> </p>
+<p align="center"> <img src="../img/buscarDatoDoble.gif" alt="eliminar al final"/> </p>
 
 <h5>Tamaño</h5>
 <p align="justify">Realiza un conteo de los nodos dentro de la lista, y retorna un valor entero de la cantidad de nodos en la lista.</p>
@@ -362,10 +362,10 @@ def ordenamiento(self):
 <p align="justify">Primero, se mostrará la salida de la lista, en este caso será una lista de números desordenados, y al final se mostrará la lista ya ordenada, implementando el método sort.</p>
 
 <h4>Lista sin ordenar:</h4>
-<p align="center"> <img src="./img/recorridoSimple.png" alt="eliminar al final"/> </p>
+<p align="center"> <img src="../img/recorridoSimple.png" alt="eliminar al final"/> </p>
 
 <h4>Lista ordenar:</h4>
-<p align="center"> <img src="./img/listasimpleordenada.png" alt="eliminar al final"/> </p>
+<p align="center"> <img src="../img/listasimpleordenada.png" alt="eliminar al final"/> </p>
 
 
 <p align="justify">Listo!!!, ahora implementen su lista.</p>
@@ -376,7 +376,5 @@ def ordenamiento(self):
     <li><a href='https://dev.to/ronnymedina/estructura-de-datos-linked-list-lista-enlazada-2h9' target="_blank">DEV</a></li>
     <li>funcionamiento gráfico de la listas simple: <a href='https://visualgo.net/en/list' target="_blank">Visualgo</a></li>
 </ul>
-
-<!-- <p align="justify"><a href="./lts_simple_tda.md">lista simple con TDA</a></p> para mañana-->
 
 <p align="center"><a href="./LISTAS.md">Listas</a></p>

@@ -60,3 +60,5 @@
     <li><a href="./lista_c_simple.md">Lista circular simplemente enlazada</a></li>
     <li>Lista circular doblemente enlazada</li>
 </ul>
+
+<p align="center"><a href="./Memoriadinamica.md">Inicio</a></p>

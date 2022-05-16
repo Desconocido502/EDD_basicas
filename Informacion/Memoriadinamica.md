@@ -1,7 +1,7 @@
 <h1>Introducción a estructura de datos</h1>
 <p align="justify">La representación de la información es importante, de modo práctico, los requisitos de almacenamiento y tiempo de ejecución exigen que tales programas deban organizar su información de un modo que soporte procesamiento eficiente, Aqui es donde entra el papel fundamental de las estructuras de datos.</p>
 
-<p align="center"> <img src="./img/edd.png" alt="edd" width="360" height="180" /> </p>
+<p align="center"> <img src="../img/edd.png" alt="edd" width="360" height="180" /> </p>
 
 
 <h2>¿Qué es una estructura de datos?</h2>
@@ -30,7 +30,7 @@
 <p align="justify">Son aquellas en las que se definen secuencias como conjuntos de elementos entre los que se establece una relación de predecesor y sucesor. Las diferentes estructuras de datos basadas en este concepto se diferencian por las operaciones de acceso a los elementos y manipulación de la estructuras. Existen tres estructuras lineales especialmente importantes: las pilas, las colas y las listas.</p>
 
 <p align="center"> 
-<img src="./img/lineales.png" alt="edd"/> 
+<img src="../img/lineales.png" alt="edd lineales"/> 
 <figcaption align="center">Fig.1 - Estructura lineal</figcaption>
 </p>
 
@@ -47,3 +47,5 @@
 </ul>
 
 <p align="center">Todos los ejemplos se trabajarán con el lenguaje Python</p>
+
+<p align="center"><a href="./Memoriadinamica.md">Inicio</a></p>

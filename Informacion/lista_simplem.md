@@ -3,7 +3,7 @@
 <p align="justify">Cada nodo (elemento) contiene un único enlace que conecta ese nodo al nodo siguiente o nodo sucesor. La Lista es eficiente en recorridos directos (“adelante”).</p>
 
 <p align="center"> 
-<img src="./img/lista_simple.png" alt="lista simple"/> 
+<img src="../img/lista_simple.png" alt="lista simple"/> 
 </p>
 
 <p align="justify">La característica principal de una lista sencilla lineal es que el apuntador del último nodo apunta hacia el valor nulo.</p>
@@ -107,7 +107,7 @@ self.primero = aux
 ```
 
 <h4>Demostración gráfica:</h4>
-<p align="center"> <img src="./img/agregaralinicio.gif" alt="agregar al inicio"/> </p>
+<p align="center"> <img src="../img/agregaralinicio.gif" alt="agregar al inicio"/> </p>
 
 
 <h5>Agregar al final</h5>
@@ -147,7 +147,7 @@ aux.siguiente = self.ultimo
 ```
 
 <h4>Demostración gráfica:</h4>
-<p align="center"> <img src="./img/agregaralfinal.gif" alt="agregar al inicio"/> </p>
+<p align="center"> <img src="../img/agregaralfinal.gif" alt="agregar al inicio"/> </p>
 
 
 <h5>Eliminar al inicio</h5>
@@ -170,7 +170,7 @@ def eliminarAlInicio(self):
 <p align="justify">En caso de que no se cumplan las anteriores, es por que tiene mas de un elemento en la lista, y se elimina la referencia al primer nodo, simplemente haciendo que la nueva referencia del nodo cabeza sea el siguiente nodo que seguia despues del nodo cabeza.</p>
 
 <h4>Demostración gráfica:</h4>
-<p align="center"> <img src="./img/eliminaralinicio.gif" alt="eliminar al inicio"/> </p>
+<p align="center"> <img src="../img/eliminaralinicio.gif" alt="eliminar al inicio"/> </p>
 
 <h5>Eliminar al final</h5>
 <p align="justify">Elimina el último nodo de la lista.</p>
@@ -195,7 +195,7 @@ def eliminarAlFinal(self):
 <p align="justify">En caso de que no se cumplan las anteriores validaciones, se usa aux, para que recorra toda la lista, hasta antes de tener la referencia del último nodo, y se realizan las reasignaciones de referencia de los nodos.</p>
 
 <h4>Demostración gráfica:</h4>
-<p align="center"> <img src="./img/eliminaralfinal.gif" alt="eliminar al final"/> </p>
+<p align="center"> <img src="../img/eliminaralfinal.gif" alt="eliminar al final"/> </p>
 
 
 <h5>Recorrido</h5>
@@ -213,7 +213,7 @@ def recorrerLista(self):
 ```
 
 <h4>Demostración gráfica:</h4>
-<p align="center"> <img src="./img/recorridoSimple.png" alt="eliminar al final"/> </p>
+<p align="center"> <img src="../img/recorridoSimple.png" alt="eliminar al final"/> </p>
 
 <h5>Buscar un dato en la lista:</h5>
 <p align="justify">Método de la clase, para buscar un dato, en caso de que lo encuentre, retorna el valor mas un mensaje de encontrado, en caso de que no lo encuentre retornará el valor enviado anteriormente mas un mensaje.Para el ejemplo siguiente, se busco el número <strong>42.</strong></p>
@@ -233,7 +233,7 @@ def buscarDato(self, dato):
 ```
 
 <h4>Demostración gráfica:</h4>
-<p align="center"> <img src="./img/buscarDato.gif" alt="eliminar al final"/> </p>
+<p align="center"> <img src="../img/buscarDato.gif" alt="eliminar al final"/> </p>
 
 <h5>Tamaño</h5>
 <p align="justify">Realiza un conteo de los nodos dentro de la lista, y retorna un valor entero de la cantidad de nodos en la lista.</p>
@@ -374,10 +374,10 @@ def ordenamiento(self):
 <p align="justify">Primero, se mostrará la salida de la lista, en este caso será una lista de números desordenados, y al final se mostrará la lista ya ordenada, implementando el método sort.</p>
 
 <h4>Lista sin ordenar:</h4>
-<p align="center"> <img src="./img/recorridoSimple.png" alt="eliminar al final"/> </p>
+<p align="center"> <img src="../img/recorridoSimple.png" alt="eliminar al final"/> </p>
 
 <h4>Lista ordenar:</h4>
-<p align="center"> <img src="./img/listasimpleordenada.png" alt="eliminar al final"/> </p>
+<p align="center"> <img src="../img/listasimpleordenada.png" alt="eliminar al final"/> </p>
 
 
 <p align="justify">Listo!!!, ahora implementen su lista.</p>

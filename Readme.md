@@ -5,6 +5,6 @@
 
 ### :rocket: Espero aprovechen estos temas!!! :rocket:
 
-<p><a href="./Memoriadinamica.md">Empieza Aqui!!!</a></p>
+<p><a href="./Informacion/Memoriadinamica.md">Empieza Aqui!!!</a></p>
 
 :airplane:
