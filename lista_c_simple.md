@@ -55,7 +55,7 @@ class Nodo:
 ```python
 from Nodo import Nodo
 
-class listaEnlazadaSimple():
+class ListaCircularSimple():
     def __init__(self):
         self.primero = None
         self.ultimo = None
@@ -201,13 +201,13 @@ def tamanio(self):
 <p align="justify">Código completo a continuación:</p>
 
 ```python
-class ListaCircular():
+class ListaCircularSimple():
 
 def __init__(self):
     self.primero = None
     self.ultimo = None
 
-def isVacia(self):
+def estaVacio(self):
     return self.primero == None
 
 def agregarAlInicio(self):
