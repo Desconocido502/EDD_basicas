@@ -6,6 +6,9 @@ class Cola():
         self.final = None
         self.tamanio = 0
     
+    def getTamanio(self):
+        return self.tamanio
+    
     def arribo(self, dato):
         #* Arriba el dato al final de la cola
         nodo_nuevo = Nodo(dato)
