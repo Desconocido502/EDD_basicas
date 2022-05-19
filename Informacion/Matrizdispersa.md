@@ -551,9 +551,3 @@ def printMatrixO(self):
 <p align="center"><a href="../Readme.md">Inicio</a></p>
 
 <p align="justify">Agradecimiento especial a <a href="https://github.com/JavierLimaCS/">Javier Lima</a>, por la elaboración del código de matriz dispersa en Python.</p>
-
-<!-- ```python
-
-``` -->
-
-<p align="justify"></p>
