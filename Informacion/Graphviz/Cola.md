@@ -410,127 +410,35 @@ def showIMG(self):
 
 <p align="justify">El primero en pasar es Lucas, le piden su nombre, nit y número de telefono, luego de esto le preguntan que tipo de pizzas comprará, y se lleva una de Pepperoni, otra de Carne y una de Piña, en ese momento su orden entra en cola, se muestra a continuación la cola:</p>
 
-<center>
-
-```graphviz
-digraph G {
-	graph [bgcolor=steelBlue rankdir=LR]
-	node [shape=rect style=filled]
-	edge [color="#999999" fontcolor="#888888"]
-	node0 [label="Cliente: Nombre: Lucas, NIT: 48746951478, telefono: 47852499,
-Pedido:
-Ingrediente: Pepperoni, tiempo de preparacion: 3min, costo: 30.0
-Ingrediente: Carne, tiempo de preparacion: 10min, costo: 45.0
-Ingrediente: Piña, tiempo de preparacion: 2min, costo: 25.0
-" color=white fillcolor=IndianRed fontcolor=white]
-}
-
-```
-
-</center>
+<p align="center">
+<img src="../../img/cola_actual_1.png" alt=""/>
+</p>
 
 <p align="justify">Se ve de color rojo de fondo, ya que se encuentra en la cola. Luego de esto [asa Angelina, y nuevamente le piden sus datos y las pizzas que comprará, ella se llevará una pizza de carne y una pizza de queso. Quedando así agregada su orden a la cola, se muestra a continuación:</p>
 
-
-<center>
-
-```graphviz
-digraph G {
-	graph [bgcolor=steelBlue rankdir=LR]
-	node [shape=rect style=filled]
-	edge [color="#999999" fontcolor="#888888"]
-	node0 [label="Cliente: Nombre: Lucas, NIT: 48746951478, telefono: 47852499,
-Pedido:
-Ingrediente: Pepperoni, tiempo de preparacion: 3min, costo: 30.0
-Ingrediente: Carne, tiempo de preparacion: 10min, costo: 45.0
-Ingrediente: Piña, tiempo de preparacion: 2min, costo: 25.0
-" color=white fillcolor=IndianRed fontcolor=white]
-	node1 [label="Cliente: Nombre: Angelina, NIT: 984756148, telefono: 98201477,
-Pedido:
-Ingrediente: Carne, tiempo de preparacion: 10min, costo: 45.0
-Ingrediente: Queso, tiempo de preparacion: 5min, costo: 35.0
-" color=white fillcolor=IndianRed fontcolor=white]
-	node0 -> node1
-}
-```
-
-</center>
+<p align="center">
+<img src="../../img/cola_actual_2.png" alt=""/>
+</p>
 
 <p align="justify">Se sigue viendo de color rojo de fondo, ya que aun se encuentran las ordenes en cola. Luego de esto pasa Eduardo, y le piden sus datos y las pizzas a llevar, el llevará de queso, piña, salchica, y de pepperoni, Quedando así agregada su orden a la cola, se muestra a continuación:</p>
 
-<center>
-
-```graphviz
-digraph G {
-	graph [bgcolor=steelBlue rankdir=LR]
-	node [shape=rect style=filled]
-	edge [color="#999999" fontcolor="#888888"]
-	node0 [label="Cliente: Nombre: Lucas, NIT: 48746951478, telefono: 47852499,
-Pedido:
-Ingrediente: Pepperoni, tiempo de preparacion: 3min, costo: 30.0
-Ingrediente: Carne, tiempo de preparacion: 10min, costo: 45.0
-Ingrediente: Piña, tiempo de preparacion: 2min, costo: 25.0
-" color=white fillcolor=IndianRed fontcolor=white]
-	node1 [label="Cliente: Nombre: Angelina, NIT: 984756148, telefono: 98201477,
-Pedido:
-Ingrediente: Carne, tiempo de preparacion: 10min, costo: 45.0
-Ingrediente: Queso, tiempo de preparacion: 5min, costo: 35.0
-" color=white fillcolor=IndianRed fontcolor=white]
-	node0 -> node1
-	node2 [label="Cliente: Nombre: Eduardo, NIT: 576922014, telefono: 45786950,
-Pedido:
-Ingrediente: Queso, tiempo de preparacion: 5min, costo: 35.0
-Ingrediente: Piña, tiempo de preparacion: 2min, costo: 25.0
-Ingrediente: Salchicha, tiempo de preparacion: 4min, costo: 3.0
-Ingrediente: Pepperoni, tiempo de preparacion: 3min, costo: 30.0
-" color=white fillcolor=IndianRed fontcolor=white]
-	node1 -> node2
-}
-
-```
-
-</center>
+<p align="center">
+<img src="../../img/cola_actual_3.png" alt=""/>
+</p>
 
 <p align="justify">Al parecer al terminar Eduardo de realizar su orden, la orden de Lucas ya se encuentra lista, miremos su orden y la actualización de la cola de ordenes:</p>
 
 #### Orden completada de Lucas
 
-```graphviz
-digraph G {
-	graph [bgcolor=steelBlue rankdir=LR]
-	node [shape=rect style=filled]
-	edge [color="#999999" fontcolor="#888888"]
-	node0 [label="Cliente: Nombre: Lucas, NIT: 48746951478, telefono: 47852499,
-Pedido:
-Ingrediente: Pepperoni, tiempo de preparacion: 3min, costo: 30.0
-Ingrediente: Carne, tiempo de preparacion: 10min, costo: 45.0
-Ingrediente: Piña, tiempo de preparacion: 2min, costo: 25.0
-" color=white fillcolor="#2ECC71" fontcolor=white]
-}
-```
+<p align="center">
+<img src="../../img/orden_realizada.png" alt=""/>
+</p>
 
 #### Cola de ordenes actualizada
 
-```graphviz
-digraph G {
-	graph [bgcolor=steelBlue rankdir=LR]
-	node [shape=rect style=filled]
-	edge [color="#999999" fontcolor="#888888"]
-	node0 [label="Cliente: Nombre: Angelina, NIT: 984756148, telefono: 98201477,
-Pedido:
-Ingrediente: Carne, tiempo de preparacion: 10min, costo: 45.0
-Ingrediente: Queso, tiempo de preparacion: 5min, costo: 35.0
-" color=white fillcolor=IndianRed fontcolor=white]
-	node1 [label="Cliente: Nombre: Eduardo, NIT: 576922014, telefono: 45786950,
-Pedido:
-Ingrediente: Queso, tiempo de preparacion: 5min, costo: 35.0
-Ingrediente: Piña, tiempo de preparacion: 2min, costo: 25.0
-Ingrediente: Salchicha, tiempo de preparacion: 4min, costo: 3.0
-Ingrediente: Pepperoni, tiempo de preparacion: 3min, costo: 30.0
-" color=white fillcolor=IndianRed fontcolor=white]
-	node0 -> node1
-}
-```
+<p align="center">
+<img src="../../img/cola_actual_4.png" alt=""/>
+</p>
 
 <p align="justify">Efectivamente, la orden de Lucas salio de la cola, nuestro método para graficar la cola de ordenes esta funcionando perfectamente!</p>
 

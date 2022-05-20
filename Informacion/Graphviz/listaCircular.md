@@ -133,26 +133,9 @@ def graficarPasoaPaso(self):
 <p align="justify">Los dos métodos realizan el mismo gráfico, e imaginemos que usaremos los siguientes números: 90,78,56, y 10, en la lista circular simple. Ahora 
 mostramos su salida.</p>
 
-<center>
-
-```graphviz
-// Lista circular simple
-digraph G {
-	graph [bgcolor=SteelBlue label="Carlos Soto - Lista Circular Simple" rankdir=LR]
-	node [shape=rect style=filled]
-	edge [color=black fontocolor="#888888"]
-	node0 [label=90 color=white fillcolor=black fontcolor=white]
-	node0 -> node1
-	node1 [label=78 color=white fillcolor=black fontcolor=white]
-	node1 -> node2
-	node2 [label=56 color=white fillcolor=black fontcolor=white]
-	node2 -> node3
-	node3 [label=10 color=white fillcolor=black fontcolor=white]
-	node3 -> node0
-}
-```
-
-</center>
+<p align="center">
+<img src="../../img/lista_circular.png" alt=""/>
+</p>
 
 <p align="justify">El código dot queda de la siguiente forma:</p>
 
