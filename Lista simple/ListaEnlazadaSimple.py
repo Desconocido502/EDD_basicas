@@ -8,7 +8,7 @@ class listaEnlazadaSimple():
     def estaVacio(self): 
         return self.primero == None
     
-    def agregarAlInicio(self, dato): 
+    def agregarAlInicio(self, dato):
         if self.estaVacio(): 
             self.primero = self.ultimo = Nodo(dato)
         else:
