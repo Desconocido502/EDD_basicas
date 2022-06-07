@@ -3,7 +3,7 @@
 <p align="jsutify">Es una colección de elementos que se agregan y se eliminan siguiendo el principio de <b>último en entrar, primero en salir</b>(<strong>LIFO, Last In-First Out</strong>), es decir, el último elemento insertado en la pila es el primero en ser eliminado.</p>
 
 <p align="center">
-<img src="../img/stack.gif" alt="stack" width="250px"/>
+<img src="../img/stack.gif" alt="stack" width="150px"/>
 </p>
 
 <p align="justify">Un elemento puede ser agregado en cualquier momento a una pila, pero solo puede acceder o eliminar al elemento que esté en la cima o tope de la misma.</p>
