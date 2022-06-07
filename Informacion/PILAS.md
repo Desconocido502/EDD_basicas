@@ -136,7 +136,7 @@ def listar(self):
         aux = aux.siguiente
 ```
 
-<p align="justify">Imaginemos que tenemos los siguientes números en la pila: 98,67,16,25,84. Se muestra los datos en la pila:</p>
+<p align="justify">Imaginemos que tenemos los siguientes números en la pila: 98,67,16,25,84 y 10. Se muestra los datos en la pila:</p>
 
 <h4>Demostración gráfica:</h4>
 <p align="center">
