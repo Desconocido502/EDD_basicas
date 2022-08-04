@@ -4,6 +4,9 @@ class listaEnlazadaSimple():
     def __init__(self): 
         self.primero = None 
         self.ultimo = None
+        
+    def getHead(self):
+        return self.primero
     
     def estaVacio(self): 
         return self.primero == None
@@ -79,6 +82,63 @@ class listaEnlazadaSimple():
         else:
             print("No hay elementos")
     
+    def sortedMerge(self, a, b):
+        result = None
+        
+        # Base cases
+        if a == None:
+            return b
+        if b == None:
+            return a
+        
+        # pick either a or b and recur..
+        if a.dato <= b.dato:
+            result = a
+            result.siguiente = self.sortedMerge(a.siguiente, b)
+        else:
+            result = b
+            result.siguiente = self.sortedMerge(a, b.siguiente)
+        return result
+
+    def mergeSort(self, h):
+        
+        # Base case if head is None
+        if h == None or h.siguiente == None:
+            return h
+
+        # get the middle of the list
+        middle = self.getMiddle(h)
+        nexttomiddle = middle.siguiente
+
+        # set the next of middle node to None
+        middle.siguiente = None
+
+        # Apply mergeSort on left list
+        left = self.mergeSort(h)
+        
+        # Apply mergeSort on right list
+        right = self.mergeSort(nexttomiddle)
+
+        # Merge the left and right lists
+        sortedlist = self.sortedMerge(left, right)
+        return sortedlist
+
+    # Utility function to get the middle
+    # of the linked list
+    def getMiddle(self, head):
+        if (head == None):
+            return head
+
+        slow = head
+        fast = head
+
+        while (fast.siguiente != None and
+                fast.siguiente.siguiente != None):
+            slow = slow.siguiente
+            fast = fast.siguiente.siguiente
+        
+        return slow
+    
     def buscarDato(self, date):
         if self.primero is None:
             print("La lista no tiene elementos")
@@ -100,7 +160,9 @@ lts_simple.agregarAlFinal(82)
 lts_simple.agregarAlFinal(64)
 lts_simple.agregarAlInicio(78)
 lts_simple.recorrerLista()
-print(lts_simple.tamanio())
-lts_simple.ordenamientoBurbuja()
-lts_simple.recorrerLista()
-print(lts_simple.buscarDato(95))
+#print(lts_simple.tamanio())
+#lts_simple.ordenamiento()
+lts_simple = lts_simple.mergeSort(lts_simple.getHead())
+print(lts_simple.dato)
+#lts_simple.recorrerLista()
+#print(lts_simple.buscarDato(95))
